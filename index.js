@@ -10,7 +10,7 @@ const puppeteer = require('puppeteer');
   	timeout: 60000
   });
   //digita no buscar pelo cep o numero do cep e aperta enter
-  await page.type('input#relaxation', '07909050');
+  await page.type('input#relaxation', /*digite o CEP desejado ao lado =>*/'50080090');
   await page.keyboard.press('Enter');
 
   await page.waitForTimeout(5000);
